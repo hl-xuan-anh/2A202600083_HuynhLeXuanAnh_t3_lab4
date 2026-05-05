@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  color: #0f172a;
+  background: #0b1020;
+}
+
+header {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent);
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+#subtitle {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: rgba(226, 232, 240, 0.75);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 12px;
+  padding: 12px;
+  height: calc(100vh - 64px);
+}
+
+#cy {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  height: 100%;
+  min-height: 420px;
+}
+
+aside {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 12px 10px;
+  color: #e2e8f0;
+}
+
+aside h2 {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+aside ul {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(226, 232, 240, 0.85);
+}
+
+.hint {
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: rgba(226, 232, 240, 0.65);
+}
+
+@media (max-width: 980px) {
+  main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  #cy {
+    height: 60vh;
+  }
+}
+

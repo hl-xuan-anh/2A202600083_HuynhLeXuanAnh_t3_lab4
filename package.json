@@ -1,0 +1,19 @@
+{
+  "name": "ai-company-graph",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fetch Wikipedia summaries, extract founders + prior orgs via OpenAI, build/query a graph, and visualize with Cytoscape.js.",
+  "scripts": {
+    "start": "node src/cli.js",
+    "serve": "http-server . -p 8080 -c-1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.87.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

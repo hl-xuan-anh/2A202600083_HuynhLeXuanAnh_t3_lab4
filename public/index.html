@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Company Graph</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.33.1/cytoscape.min.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>AI Company Graph</h1>
+      <p id="subtitle"></p>
+    </header>
+    <main>
+      <div id="cy"></div>
+      <aside>
+        <h2>Highlighted result</h2>
+        <ul id="results"></ul>
+        <p class="hint">
+          Tip: drag nodes, scroll to zoom, click to highlight neighbors.
+        </p>
+      </aside>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+
